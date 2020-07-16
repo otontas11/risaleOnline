@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Risale Oku";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_book.cshtml")
+
+
+
+@section AfterPageCss{
+
+    <link href="@Url.Content("~/Assets/assets/css/book.css")"/>
+<style>
+  
+    .article {
+        max-width: 660px;
+        margin: 0 auto;
+        border: 1px solid #e2e7e8;
+        background: #fff;
+        padding: 2.5rem 3rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+        .article .divider {
+            border-bottom: 3px solid #e2e7e8;
+            width: 20%;
+            margin: 1rem auto;
+        }
+
+   
+ 
+</style>
+
+}
+
+@section AfterPageScripts{}
